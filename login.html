@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author Login — Nyx InVerse</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Nyx InVerse <small>voices, in verse</small></a>
+  <button class="scribble-btn" id="nav-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+    <svg viewBox="0 0 60 60">
+      <path class="bar" d="M12 20 Q30 17 48 21" />
+      <path class="bar" d="M11 31 Q30 30 49 31" />
+      <path class="bar" d="M13 42 Q30 45 47 41" />
+      <path class="cross" d="M16 16 Q30 30 44 44" />
+      <path class="cross" d="M44 16 Q30 30 16 44" />
+    </svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="poems.html">Poems</a>
+    <a href="stories.html">Mini-Stories</a>
+    <a href="about.html">About</a>
+    <a href="voices.html">Add Your Voice</a>
+    <a href="login.html" class="current">Author Login</a>
+  </nav>
+  <div class="sidebar-foot">Nyx InVerse — a series of thoughts brought to you by the voices in my head.</div>
+</aside>
+
+<main>
+  <section class="container" style="padding-top:9rem; max-width:520px;">
+    <span class="eyebrow">Private</span>
+    <h1>Author Login</h1>
+    <div class="ink-line"></div>
+    <p class="tagline text-soft">This area is reserved for the author of Nyx InVerse. Enter the author's email to receive a one-time sign-in link — no password needed, and no other email will work.</p>
+
+    <form class="voice-form mt-lg" id="login-form">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-solid">Send magic link</button>
+        <p class="form-status" id="login-status"></p>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="container">
+  <span>© <span id="year"></span> Nyx InVerse</span>
+  <a href="index.html">Back to home</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

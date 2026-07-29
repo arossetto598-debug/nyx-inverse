@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nyx InVerse — A series of thoughts brought to you by the voices in my head</title>
+<meta name="description" content="Nyx InVerse: poems and mini-stories brought to you by the voices in my head.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Nyx InVerse <small>voices, in verse</small></a>
+  <button class="scribble-btn" id="nav-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+    <svg viewBox="0 0 60 60">
+      <path class="bar" d="M12 20 Q30 17 48 21" />
+      <path class="bar" d="M11 31 Q30 30 49 31" />
+      <path class="bar" d="M13 42 Q30 45 47 41" />
+      <path class="cross" d="M16 16 Q30 30 44 44" />
+      <path class="cross" d="M44 16 Q30 30 16 44" />
+    </svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html" class="current">Home</a>
+    <a href="poems.html">Poems</a>
+    <a href="stories.html">Mini-Stories</a>
+    <a href="about.html">About</a>
+    <a href="voices.html">Add Your Voice</a>
+    <a href="login.html">Author Login</a>
+  </nav>
+  <div class="sidebar-foot">
+    Nyx InVerse — a series of thoughts brought to you by the voices in my head.
+  </div>
+</aside>
+
+<main>
+  <section class="hero">
+    <div class="whisper-words" aria-hidden="true">
+      <span style="top:15%; font-size:2.4rem;">midnight thoughts</span>
+      <span style="top:45%; font-size:3.6rem; animation-duration:34s;">a quiet static</span>
+      <span style="top:72%; font-size:2rem; animation-duration:20s;">say it in verse</span>
+    </div>
+    <div class="container hero-content">
+      <span class="eyebrow">Poems · Mini-Stories · Marginalia</span>
+      <h1>Nyx InVerse</h1>
+      <div class="ink-line"></div>
+      <p class="tagline">A series of thoughts brought to you by the voices in my head.</p>
+      <div class="hero-actions">
+        <a href="poems.html" class="btn btn-solid">Read the poems</a>
+        <a href="stories.html" class="btn">Wander into a story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container reveal">
+    <div class="section-head">
+      <span class="eyebrow">From the notebook</span>
+      <h2>Freshly scrawled</h2>
+      <p class="text-soft">A small taste of what's living on the page right now.</p>
+    </div>
+    <div class="grid">
+      <article class="card poem-card">
+        <span class="tag">Poem</span>
+        <h3>Static, Softly</h3>
+        <p>the voices don't shout —
+they hum like a radio
+left on in the next room,
+telling me things
+I already knew.</p>
+        <div class="meta"><a href="poems.html">Read more poems →</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Mini-Story</span>
+        <h3>The Lighthouse That Blinked First</h3>
+        <p class="text-soft">Every night it warned the ships away. One night, it wanted to see what it was warning them from.</p>
+        <div class="meta"><a href="stories.html">Read more stories →</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">About</span>
+        <h3>Who's writing this?</h3>
+        <p class="text-soft">One person, several voices, and a habit of writing down what they say.</p>
+        <div class="meta"><a href="about.html">Meet the author →</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="container reveal">
+    <div class="card" style="padding: 2.6rem;">
+      <span class="eyebrow">Leave a trace</span>
+      <h2>Add Your Voice</h2>
+      <p class="text-soft" style="max-width:56ch;">Read something that stayed with you? Leave a small message for the author — it's a quiet inbox only they can read.</p>
+      <a href="voices.html" class="btn btn-solid mt-lg">Leave a message</a>
+    </div>
+  </section>
+</main>
+
+<button class="palette-fab" id="palette-fab" aria-label="Change colour palette"></button>
+<div class="palette-panel" id="palette-panel"></div>
+
+<footer class="container">
+  <span>© <span id="year"></span> Nyx InVerse</span>
+  <span>Built with ink, static, and a little JavaScript</span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

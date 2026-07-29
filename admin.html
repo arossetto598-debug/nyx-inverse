@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inbox — Nyx InVerse</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Nyx InVerse <small>voices, in verse</small></a>
+  <button class="scribble-btn" id="nav-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+    <svg viewBox="0 0 60 60">
+      <path class="bar" d="M12 20 Q30 17 48 21" />
+      <path class="bar" d="M11 31 Q30 30 49 31" />
+      <path class="bar" d="M13 42 Q30 45 47 41" />
+      <path class="cross" d="M16 16 Q30 30 44 44" />
+      <path class="cross" d="M44 16 Q30 30 16 44" />
+    </svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="poems.html">Poems</a>
+    <a href="stories.html">Mini-Stories</a>
+    <a href="about.html">About</a>
+    <a href="voices.html">Add Your Voice</a>
+    <a href="login.html">Author Login</a>
+  </nav>
+  <div class="sidebar-foot">Nyx InVerse — a series of thoughts brought to you by the voices in my head.</div>
+</aside>
+
+<main class="container" style="padding-top:9rem;">
+  <p id="admin-gate" class="reveal in">Checking who's asking…</p>
+
+  <div id="admin-dashboard" style="display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span class="eyebrow">Only you can see this</span>
+        <h1>The Inbox</h1>
+        <div class="ink-line"></div>
+      </div>
+      <button class="btn" id="logout-btn">Sign out</button>
+    </div>
+    <div class="grid mt-lg" id="voices-list"></div>
+  </div>
+</main>
+
+<footer class="container">
+  <span>© <span id="year"></span> Nyx InVerse</span>
+  <a href="index.html">Back to home</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

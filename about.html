@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Nyx InVerse</title>
+<meta name="description" content="About the author of Nyx InVerse.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Nyx InVerse <small>voices, in verse</small></a>
+  <button class="scribble-btn" id="nav-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+    <svg viewBox="0 0 60 60">
+      <path class="bar" d="M12 20 Q30 17 48 21" />
+      <path class="bar" d="M11 31 Q30 30 49 31" />
+      <path class="bar" d="M13 42 Q30 45 47 41" />
+      <path class="cross" d="M16 16 Q30 30 44 44" />
+      <path class="cross" d="M44 16 Q30 30 16 44" />
+    </svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="poems.html">Poems</a>
+    <a href="stories.html">Mini-Stories</a>
+    <a href="about.html" class="current">About</a>
+    <a href="voices.html">Add Your Voice</a>
+    <a href="login.html">Author Login</a>
+  </nav>
+  <div class="sidebar-foot">Nyx InVerse — a series of thoughts brought to you by the voices in my head.</div>
+</aside>
+
+<main>
+  <section class="container" style="padding-top:9rem;">
+    <div class="about-grid reveal in">
+      <div class="about-portrait">"one person, several voices, and a habit of writing down what they say."</div>
+      <div>
+        <span class="eyebrow">About the author</span>
+        <h1>Hi, I'm the one holding the pen</h1>
+        <div class="ink-line"></div>
+        <p>Nyx InVerse started as a place to put down the thoughts that show up uninvited — late at night, mid-commute, halfway through washing the dishes. Some arrive as poems. Some insist on being small stories instead. I don't always get a say in which.</p>
+        <p class="text-soft">This site is that notebook, tidied up just enough to share. If something here sounds like a thought you've also had, that's the whole point of writing it down — <a href="voices.html">tell me about it</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container reveal">
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Writes</span>
+        <h3>Poems &amp; mini-stories</h3>
+        <p class="text-soft">Short, honest, occasionally strange. Usually finished in one sitting, exactly like the thought that started it.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Reads</span>
+        <h3>Whatever's on the nightstand</h3>
+        <p class="text-soft">Poetry collections, odd little novels, and anything with a first line good enough to steal the mood of.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Believes</span>
+        <h3>Every voice deserves a page</h3>
+        <p class="text-soft">Even the contradictory ones. Especially those.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="palette-fab" id="palette-fab" aria-label="Change colour palette"></button>
+<div class="palette-panel" id="palette-panel"></div>
+
+<footer class="container">
+  <span>© <span id="year"></span> Nyx InVerse</span>
+  <a href="index.html">Back to home</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

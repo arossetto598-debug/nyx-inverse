@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini-Stories — Nyx InVerse</title>
+<meta name="description" content="Mini-stories from Nyx InVerse — thoughts brought to you by the voices in my head.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Nyx InVerse <small>voices, in verse</small></a>
+  <button class="scribble-btn" id="nav-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+    <svg viewBox="0 0 60 60">
+      <path class="bar" d="M12 20 Q30 17 48 21" />
+      <path class="bar" d="M11 31 Q30 30 49 31" />
+      <path class="bar" d="M13 42 Q30 45 47 41" />
+      <path class="cross" d="M16 16 Q30 30 44 44" />
+      <path class="cross" d="M44 16 Q30 30 16 44" />
+    </svg>
+  </button>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="poems.html">Poems</a>
+    <a href="stories.html" class="current">Mini-Stories</a>
+    <a href="about.html">About</a>
+    <a href="voices.html">Add Your Voice</a>
+    <a href="login.html">Author Login</a>
+  </nav>
+  <div class="sidebar-foot">Nyx InVerse — a series of thoughts brought to you by the voices in my head.</div>
+</aside>
+
+<main>
+  <section class="container" style="padding-top:9rem;">
+    <span class="eyebrow">The stories</span>
+    <h1>Mini-Stories</h1>
+    <div class="ink-line"></div>
+    <p class="tagline text-soft">Small, complete worlds — the kind that fit in a coffee break.</p>
+  </section>
+
+  <section class="container reveal">
+    <div class="grid">
+      <article class="card reveal in">
+        <span class="tag">Flash fiction</span>
+        <h3>The Lighthouse That Blinked First</h3>
+        <p class="text-soft">Every night it warned the ships away. One night, it wanted to see what it was warning them from. So, just once, it let the dark in first.</p>
+      </article>
+
+      <article class="card reveal in">
+        <span class="tag">Flash fiction</span>
+        <h3>Directions to a House That Moved</h3>
+        <p class="text-soft">Turn left at the tree that used to be a lamppost. The house will be wherever it needs you most that day — it always finds a way to still be home.</p>
+      </article>
+
+      <article class="card reveal in">
+        <span class="tag">Flash fiction</span>
+        <h3>The Understudy Moon</h3>
+        <p class="text-soft">For one night the sun didn't rise, and the moon, who had watched from the wings for centuries, finally got to play the lead — gently, so nothing would notice the switch.</p>
+      </article>
+    </div>
+
+    <p class="text-soft mt-lg" style="font-size:.9rem;">
+      New stories are added by the author directly — this page is ready to grow with every entry.
+    </p>
+  </section>
+</main>
+
+<button class="palette-fab" id="palette-fab" aria-label="Change colour palette"></button>
+<div class="palette-panel" id="palette-panel"></div>
+
+<footer class="container">
+  <span>© <span id="year"></span> Nyx InVerse</span>
+  <a href="index.html">Back to home</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
